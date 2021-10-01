@@ -1,0 +1,53 @@
+<div id="container">
+	<h1 class="title">RGB - Hex Converter</h1>
+
+	<!--  兩個選擇器 -->
+	<div class="rgb-hex-content">
+		<!-- 	左邊RGB選擇器 -->
+		<div class="colour-rgb">
+			<div class="title">RGB</div>
+			<div class="title"><input type="text" id="rgb-box" value="rgb(255,255,255)"></div>
+			<!-- 紅色bar -->
+			<div class="red-colour">
+				<div class="r">R:</div>
+				<input class="red" type="range" id="red" value="255" min="0" max="255">
+				<div class="display r" style="#"></div>
+			</div>
+			<!-- 綠色bar -->
+			<div class="green-colour">
+				<div class="g">G:</div>
+				<input class="green" type="range" id="green" value="255" min="0" max="255">
+				<div class="display g" style="#"></div>
+			</div>
+			<!-- 藍色bar -->
+			<div class="blue-colour">
+				<div class="b">B:</div>
+				<input class="blue" type="range" id="blue" value="255" min="0" max="255">
+				<div class="display b" style="#"></div>
+			</div>
+		</div>
+		<!-- 	左邊RGB選擇器 -->
+
+		<!-- 	右邊HEX色號轉譯 -->
+		<div class="colour-hex">
+			<div class="title">HEX</div>
+			<div class="hex-content">
+				<input class="hex-box" id="hex-box" type="#" value="#000000">
+			</div>
+			<div class="hex display" id="hex-display" style="#">Color Review</div>
+			<button class="button" id="add-btn">Save</button>
+		</div>
+		<!-- 	右邊HEX色號轉譯 -->
+
+	</div>
+	<!--  兩個選擇器 -->
+
+	<div class="saved">
+		<h2 class="title">Saved Color</h2>
+		<div class="item align-items-start">
+			<div id="my-color">
+
+			</div>
+		</div>
+	</div>
+</div>

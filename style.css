@@ -1,0 +1,157 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/* 	background: #e9ebee; */
+	font-family:'MicroSoft Jhenghei', sans-serif;
+}
+
+#container {
+	display:flex;
+	flex-direction:column;
+	width: 800px;
+	background: white;
+	padding: 20px;
+	border-radius: 4px;  /*整個頁面的圓角*/
+	border: 1px solid #dddfe2;  /*整個頁面的邊線框*/
+}
+
+.title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+	align-items:center;
+}
+
+.rgb-hex-content{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom:10px;
+}
+
+
+#rgb-box, #hex-box{
+	width: 200px;
+	height: 40px;
+	margin-bottom:5px;
+	border-radius: 40px;
+	text-align:center;
+	font-size:15px;
+	background: #e9ebee;
+	border-radius: 4px;
+}
+
+input[type="range"] {
+	-webkit-apperance:none;
+	outline:none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-apperance:none;
+	cursor:pointer;
+}
+
+.red-colour {
+	background: linear-gradient(90deg, #000, red);
+	margin-top:10px;
+}
+
+.green-colour {
+	background:linear-gradient(90deg, #000, green);
+}
+
+.blue-colour  {
+	background:linear-gradient(90deg, #000, blue);
+}
+
+
+
+.r, .g, .b{
+	min-width: 40px; 
+	display:flex; 
+	align-items: center;
+	justify-content: center;
+	margin-right: 3px;
+	color:white;
+}
+
+.red-colour, .green-colour, .blue-colour {
+	display: flex;
+	width: 210px;
+	height: 40px;
+	margin-bottom: 15px;
+}
+
+.display {
+	display: flex;
+	min-width:40px;
+	align-items: center;
+	border-radius: 4px;
+}
+
+.button {
+    background-color: #C3554C; /* coral */
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		border-radius: 7px;
+}
+
+.button:hover {
+    background-color: #E8AAAD; /* coral */
+    color: black;
+}
+
+
+
+.colour-rgb, .colour-hex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	min-width:250px;
+}
+
+#hex-display {
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px;
+	font-size:10px;
+	text-align:center;
+	justify-content:center;
+	color: grey;
+	border: 1px solid grey;
+	border-radius:10px;
+	
+}
+
+/* saved color CSS */
+#my-color {
+	display:flex;
+	flex-wrap:wrap
+}
+.col-3 {
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	width:150px;
+	padding:10px;
+	margin:10px;
+	vertical-align: middle;
+	color: grey;
+}
+
+.delete:hover {
+  color: black;
+	cursor:pointer
+}
+
+
+
+/* * {
+	border: 1px solid 
+} */
